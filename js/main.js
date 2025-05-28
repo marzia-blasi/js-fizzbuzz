@@ -19,17 +19,27 @@ programma che stampi i numeri da 1 a 100
 sicuramnete con più di singolo if 
  */
 
+/*
+
+1 
+2
+3 - Fizz
+4
+...
+15 - FizzBuzz
+16
+17
+18 - Fizz
+
+*/
+
 for (let i = 1; i <= 100; i++) {
-  if (i % 3 == 0) {
-    console.log("Fizz");
-  }
-
-  if (i % 5 == 0) {
-    console.log("Buzz");
-  }
-
   if (i % 3 == 0 && i % 5 == 0) {
-    console.log("FizzBuzz");
+    console.log(i + " - FizzBuzz"); // entrambi
+  } else if (i % 3 == 0) {
+    console.log(i + " - Fizz");
+  } else if (i % 5 == 0) {
+    console.log(i + " - Buzz");
   } else {
     console.log(i);
   }
